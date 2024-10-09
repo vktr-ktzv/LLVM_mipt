@@ -14,8 +14,8 @@ def read_data_from_file(file_path):
     return data
 
 # Путь к файлу
-file_path = 'logs/statLen5.dat'  # Замените на ваш путь к файлу
-save_png = 'png/len5.png'
+file_path = 'logs/statLen1.dat'  # Замените на ваш путь к файлу
+save_png = 'png/len1.png'
 
 # Считывание данных
 data = read_data_from_file(file_path)
