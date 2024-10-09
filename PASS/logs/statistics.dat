@@ -1,0 +1,398 @@
+alloca : 1
+call : 1713419
+bitcast : 1
+br : 16662319
+shl : 7979041
+add : 22413620
+getelementptr : 8108315
+store : 926985
+or : 98304
+icmp : 20720153
+srem : 18963
+sdiv : 9481
+sext : 9481
+trunc : 2495225
+load : 7967761
+select : 2490361
+zext : 12527664
+ret : 786432
+and : 1572864
+ashr : 786432
+getelemen : 1
+
+alloca -> call : 1
+call -> bitcast : 1
+bitcast -> call : 1
+call -> br : 7
+br -> br : 519
+br -> shl : 6298392
+shl -> add : 7092513
+add -> getelementptr : 1835001
+getelementptr -> store : 140553
+store -> shl : 98304
+shl -> or : 98304
+or -> add : 98304
+store -> add : 828681
+add -> icmp : 8823303
+icmp -> br : 10393096
+br -> add : 6421759
+br -> call : 9488
+call -> srem : 9482
+srem -> icmp : 1
+srem -> sdiv : 9481
+sdiv -> srem : 9481
+srem -> shl : 9481
+add -> sext : 9481
+sext -> getelementptr : 9481
+br -> getelementptr : 1
+getelementptr -> br : 1
+shl -> trunc : 1792
+trunc -> br : 4864
+getelementptr -> load : 7967761
+load -> icmp : 7181329
+icmp -> trunc : 917497
+trunc -> select : 917497
+select -> call : 917497
+call -> add : 1703929
+br -> trunc : 789504
+trunc -> call : 786432
+br -> icmp : 2356224
+add -> zext : 6263832
+zext -> getelementptr : 6263832
+icmp -> zext : 6263832
+zext -> add : 5482002
+add -> br : 5482002
+br -> ret : 786432
+ret -> shl : 786432
+load -> trunc : 786432
+trunc -> icmp : 786432
+icmp -> add : 786432
+icmp -> and : 1572864
+and -> icmp : 786432
+icmp -> icmp : 786432
+and -> shl : 786432
+shl -> ashr : 786432
+ashr -> select : 786432
+select -> select : 786432
+select -> store : 786432
+zext -> br : 781830
+add -> getelemen : 1
+
+
+alloca -> call -> bitcast : 1
+call -> bitcast -> call : 1
+bitcast -> call -> br : 1
+call -> br -> br : 1
+br -> br -> shl : 519
+br -> shl -> add : 6296600
+shl -> add -> getelementptr : 819200
+add -> getelementptr -> store : 131072
+getelementptr -> store -> shl : 98304
+store -> shl -> or : 98304
+shl -> or -> add : 98304
+or -> add -> getelementptr : 98304
+getelementptr -> store -> add : 42249
+store -> add -> icmp : 828681
+add -> icmp -> br : 8036871
+icmp -> br -> shl : 6297873
+icmp -> br -> add : 3283455
+br -> add -> icmp : 5504261
+icmp -> br -> br : 517
+icmp -> br -> call : 9488
+br -> call -> srem : 9482
+call -> srem -> icmp : 1
+srem -> icmp -> br : 1
+call -> srem -> sdiv : 9481
+srem -> sdiv -> srem : 9481
+sdiv -> srem -> shl : 9481
+srem -> shl -> add : 9481
+shl -> add -> sext : 9481
+add -> sext -> getelementptr : 9481
+sext -> getelementptr -> store : 9481
+icmp -> br -> getelementptr : 1
+br -> getelementptr -> br : 1
+getelementptr -> br -> br : 1
+br -> shl -> trunc : 1792
+shl -> trunc -> br : 1792
+trunc -> br -> add : 1792
+br -> add -> getelementptr : 917497
+add -> getelementptr -> load : 1703929
+getelementptr -> load -> icmp : 7181329
+load -> icmp -> trunc : 917497
+icmp -> trunc -> select : 917497
+trunc -> select -> call : 917497
+select -> call -> add : 917497
+call -> add -> icmp : 1703929
+br -> call -> br : 6
+call -> br -> trunc : 6
+br -> trunc -> br : 3072
+trunc -> br -> trunc : 3072
+br -> trunc -> call : 786432
+trunc -> call -> add : 786432
+icmp -> br -> icmp : 10734
+br -> icmp -> br : 2356224
+shl -> add -> zext : 6263832
+add -> zext -> getelementptr : 6263832
+zext -> getelementptr -> load : 6263832
+load -> icmp -> zext : 6263832
+icmp -> zext -> add : 5482002
+zext -> add -> br : 5482002
+add -> br -> add : 3136512
+add -> br -> ret : 781830
+br -> ret -> shl : 786432
+ret -> shl -> add : 786432
+getelementptr -> load -> trunc : 786432
+load -> trunc -> icmp : 786432
+trunc -> icmp -> add : 786432
+icmp -> add -> icmp : 786432
+add -> icmp -> and : 786432
+icmp -> and -> icmp : 786432
+and -> icmp -> icmp : 786432
+icmp -> icmp -> and : 786432
+icmp -> and -> shl : 786432
+and -> shl -> ashr : 786432
+shl -> ashr -> select : 786432
+ashr -> select -> select : 786432
+select -> select -> store : 786432
+select -> store -> add : 786432
+icmp -> br -> trunc : 786426
+add -> br -> icmp : 1563660
+icmp -> br -> ret : 4602
+icmp -> zext -> br : 781830
+zext -> br -> icmp : 781830
+br -> add -> getelemen : 1
+
+
+alloca -> call -> bitcast -> call : 1
+call -> bitcast -> call -> br : 1
+bitcast -> call -> br -> br : 1
+call -> br -> br -> shl : 1
+br -> br -> shl -> add : 512
+br -> shl -> add -> getelementptr : 32768
+shl -> add -> getelementptr -> store : 32768
+add -> getelementptr -> store -> shl : 98304
+getelementptr -> store -> shl -> or : 98304
+store -> shl -> or -> add : 98304
+shl -> or -> add -> getelementptr : 98304
+or -> add -> getelementptr -> store : 98304
+add -> getelementptr -> store -> add : 32768
+getelementptr -> store -> add -> icmp : 42249
+store -> add -> icmp -> br : 828681
+add -> icmp -> br -> shl : 4728081
+icmp -> br -> shl -> add : 6296088
+add -> icmp -> br -> add : 2497023
+icmp -> br -> add -> icmp : 2367749
+br -> add -> icmp -> br : 5504261
+add -> icmp -> br -> br : 517
+icmp -> br -> br -> shl : 517
+add -> icmp -> br -> call : 9487
+icmp -> br -> call -> srem : 9482
+br -> call -> srem -> icmp : 1
+call -> srem -> icmp -> br : 1
+srem -> icmp -> br -> call : 1
+br -> call -> srem -> sdiv : 9481
+call -> srem -> sdiv -> srem : 9481
+srem -> sdiv -> srem -> shl : 9481
+sdiv -> srem -> shl -> add : 9481
+srem -> shl -> add -> sext : 9481
+shl -> add -> sext -> getelementptr : 9481
+add -> sext -> getelementptr -> store : 9481
+sext -> getelementptr -> store -> add : 9481
+add -> icmp -> br -> getelementptr : 1
+icmp -> br -> getelementptr -> br : 1
+br -> getelementptr -> br -> br : 1
+getelementptr -> br -> br -> shl : 1
+br -> br -> shl -> trunc : 7
+br -> shl -> trunc -> br : 1792
+shl -> trunc -> br -> add : 1792
+trunc -> br -> add -> getelementptr : 1792
+br -> add -> getelementptr -> load : 917497
+add -> getelementptr -> load -> icmp : 917497
+getelementptr -> load -> icmp -> trunc : 917497
+load -> icmp -> trunc -> select : 917497
+icmp -> trunc -> select -> call : 917497
+trunc -> select -> call -> add : 917497
+select -> call -> add -> icmp : 917497
+call -> add -> icmp -> br : 1703929
+icmp -> br -> add -> getelementptr : 915705
+icmp -> br -> shl -> trunc : 1785
+icmp -> br -> call -> br : 6
+br -> call -> br -> trunc : 6
+call -> br -> trunc -> br : 6
+br -> trunc -> br -> trunc : 3072
+trunc -> br -> trunc -> call : 3072
+br -> trunc -> call -> add : 786432
+trunc -> call -> add -> icmp : 786432
+add -> icmp -> br -> icmp : 10734
+icmp -> br -> icmp -> br : 10734
+br -> icmp -> br -> add : 786432
+br -> shl -> add -> zext : 6263832
+shl -> add -> zext -> getelementptr : 6263832
+add -> zext -> getelementptr -> load : 6263832
+zext -> getelementptr -> load -> icmp : 6263832
+getelementptr -> load -> icmp -> zext : 6263832
+load -> icmp -> zext -> add : 5482002
+icmp -> zext -> add -> br : 5482002
+zext -> add -> br -> add : 3136512
+add -> br -> add -> icmp : 3136512
+br -> icmp -> br -> shl : 1569792
+zext -> add -> br -> ret : 781830
+add -> br -> ret -> shl : 781830
+br -> ret -> shl -> add : 786432
+ret -> shl -> add -> getelementptr : 786432
+shl -> add -> getelementptr -> load : 786432
+add -> getelementptr -> load -> trunc : 786432
+getelementptr -> load -> trunc -> icmp : 786432
+load -> trunc -> icmp -> add : 786432
+trunc -> icmp -> add -> icmp : 786432
+icmp -> add -> icmp -> and : 786432
+add -> icmp -> and -> icmp : 786432
+icmp -> and -> icmp -> icmp : 786432
+and -> icmp -> icmp -> and : 786432
+icmp -> icmp -> and -> shl : 786432
+icmp -> and -> shl -> ashr : 786432
+and -> shl -> ashr -> select : 786432
+shl -> ashr -> select -> select : 786432
+ashr -> select -> select -> store : 786432
+select -> select -> store -> add : 786432
+select -> store -> add -> icmp : 786432
+add -> icmp -> br -> trunc : 786426
+icmp -> br -> trunc -> call : 783360
+zext -> add -> br -> icmp : 1563660
+add -> br -> icmp -> br : 1563660
+add -> icmp -> br -> ret : 4602
+icmp -> br -> ret -> shl : 4602
+icmp -> br -> trunc -> br : 3066
+load -> icmp -> zext -> br : 781830
+icmp -> zext -> br -> icmp : 781830
+zext -> br -> icmp -> br : 781830
+icmp -> br -> add -> getelemen : 1
+
+
+alloca -> call -> bitcast -> call -> br : 1
+call -> bitcast -> call -> br -> br : 1
+bitcast -> call -> br -> br -> shl : 1
+call -> br -> br -> shl -> add : 1
+br -> br -> shl -> add -> getelementptr : 512
+br -> shl -> add -> getelementptr -> store : 32768
+shl -> add -> getelementptr -> store -> shl : 32768
+add -> getelementptr -> store -> shl -> or : 98304
+getelementptr -> store -> shl -> or -> add : 98304
+store -> shl -> or -> add -> getelementptr : 98304
+shl -> or -> add -> getelementptr -> store : 98304
+or -> add -> getelementptr -> store -> shl : 65536
+or -> add -> getelementptr -> store -> add : 32768
+add -> getelementptr -> store -> add -> icmp : 32768
+getelementptr -> store -> add -> icmp -> br : 42249
+store -> add -> icmp -> br -> shl : 32256
+add -> icmp -> br -> shl -> add : 4726296
+icmp -> br -> shl -> add -> getelementptr : 32256
+store -> add -> icmp -> br -> add : 3584
+add -> icmp -> br -> add -> icmp : 1581317
+icmp -> br -> add -> icmp -> br : 2367749
+br -> add -> icmp -> br -> br : 517
+add -> icmp -> br -> br -> shl : 517
+icmp -> br -> br -> shl -> add : 511
+br -> add -> icmp -> br -> call : 7
+add -> icmp -> br -> call -> srem : 9481
+icmp -> br -> call -> srem -> icmp : 1
+br -> call -> srem -> icmp -> br : 1
+call -> srem -> icmp -> br -> call : 1
+srem -> icmp -> br -> call -> srem : 1
+icmp -> br -> call -> srem -> sdiv : 9481
+br -> call -> srem -> sdiv -> srem : 9481
+call -> srem -> sdiv -> srem -> shl : 9481
+srem -> sdiv -> srem -> shl -> add : 9481
+sdiv -> srem -> shl -> add -> sext : 9481
+srem -> shl -> add -> sext -> getelementptr : 9481
+shl -> add -> sext -> getelementptr -> store : 9481
+add -> sext -> getelementptr -> store -> add : 9481
+sext -> getelementptr -> store -> add -> icmp : 9481
+store -> add -> icmp -> br -> call : 9480
+store -> add -> icmp -> br -> getelementptr : 1
+add -> icmp -> br -> getelementptr -> br : 1
+icmp -> br -> getelementptr -> br -> br : 1
+br -> getelementptr -> br -> br -> shl : 1
+getelementptr -> br -> br -> shl -> trunc : 1
+br -> br -> shl -> trunc -> br : 7
+br -> shl -> trunc -> br -> add : 1792
+shl -> trunc -> br -> add -> getelementptr : 1792
+trunc -> br -> add -> getelementptr -> load : 1792
+br -> add -> getelementptr -> load -> icmp : 917497
+add -> getelementptr -> load -> icmp -> trunc : 917497
+getelementptr -> load -> icmp -> trunc -> select : 917497
+load -> icmp -> trunc -> select -> call : 917497
+icmp -> trunc -> select -> call -> add : 917497
+trunc -> select -> call -> add -> icmp : 917497
+select -> call -> add -> icmp -> br : 917497
+call -> add -> icmp -> br -> add : 1702393
+add -> icmp -> br -> add -> getelementptr : 915705
+icmp -> br -> add -> getelementptr -> load : 915705
+br -> add -> icmp -> br -> shl : 4695825
+add -> icmp -> br -> shl -> trunc : 1785
+icmp -> br -> shl -> trunc -> br : 1785
+add -> icmp -> br -> call -> br : 6
+icmp -> br -> call -> br -> trunc : 6
+br -> call -> br -> trunc -> br : 6
+call -> br -> trunc -> br -> trunc : 6
+br -> trunc -> br -> trunc -> call : 3072
+trunc -> br -> trunc -> call -> add : 3072
+br -> trunc -> call -> add -> icmp : 786432
+trunc -> call -> add -> icmp -> br : 786432
+call -> add -> icmp -> br -> icmp : 1536
+add -> icmp -> br -> icmp -> br : 10734
+icmp -> br -> icmp -> br -> add : 4602
+br -> icmp -> br -> add -> icmp : 786432
+br -> add -> icmp -> br -> add : 791046
+icmp -> br -> shl -> add -> zext : 6263832
+br -> shl -> add -> zext -> getelementptr : 6263832
+shl -> add -> zext -> getelementptr -> load : 6263832
+add -> zext -> getelementptr -> load -> icmp : 6263832
+zext -> getelementptr -> load -> icmp -> zext : 6263832
+getelementptr -> load -> icmp -> zext -> add : 5482002
+load -> icmp -> zext -> add -> br : 5482002
+icmp -> zext -> add -> br -> add : 3136512
+zext -> add -> br -> add -> icmp : 3136512
+add -> br -> add -> icmp -> br : 3136512
+br -> add -> icmp -> br -> icmp : 9198
+icmp -> br -> icmp -> br -> shl : 6132
+br -> icmp -> br -> shl -> add : 1569792
+icmp -> zext -> add -> br -> ret : 781830
+zext -> add -> br -> ret -> shl : 781830
+add -> br -> ret -> shl -> add : 781830
+br -> ret -> shl -> add -> getelementptr : 786432
+ret -> shl -> add -> getelementptr -> load : 786432
+shl -> add -> getelementptr -> load -> trunc : 786432
+add -> getelementptr -> load -> trunc -> icmp : 786432
+getelementptr -> load -> trunc -> icmp -> add : 786432
+load -> trunc -> icmp -> add -> icmp : 786432
+trunc -> icmp -> add -> icmp -> and : 786432
+icmp -> add -> icmp -> and -> icmp : 786432
+add -> icmp -> and -> icmp -> icmp : 786432
+icmp -> and -> icmp -> icmp -> and : 786432
+and -> icmp -> icmp -> and -> shl : 786432
+icmp -> icmp -> and -> shl -> ashr : 786432
+icmp -> and -> shl -> ashr -> select : 786432
+and -> shl -> ashr -> select -> select : 786432
+shl -> ashr -> select -> select -> store : 786432
+ashr -> select -> select -> store -> add : 786432
+select -> select -> store -> add -> icmp : 786432
+select -> store -> add -> icmp -> br : 786432
+store -> add -> icmp -> br -> trunc : 783360
+add -> icmp -> br -> trunc -> call : 783360
+icmp -> br -> trunc -> call -> add : 783360
+icmp -> zext -> add -> br -> icmp : 1563660
+zext -> add -> br -> icmp -> br : 1563660
+add -> br -> icmp -> br -> shl : 781830
+br -> add -> icmp -> br -> ret : 4602
+add -> icmp -> br -> ret -> shl : 4602
+icmp -> br -> ret -> shl -> add : 4602
+br -> add -> icmp -> br -> trunc : 3066
+add -> icmp -> br -> trunc -> br : 3066
+icmp -> br -> trunc -> br -> trunc : 3066
+add -> br -> icmp -> br -> add : 781830
+getelementptr -> load -> icmp -> zext -> br : 781830
+load -> icmp -> zext -> br -> icmp : 781830
+icmp -> zext -> br -> icmp -> br : 781830
+zext -> br -> icmp -> br -> shl : 781830
+icmp -> br -> br -> shl -> trunc : 6
