@@ -3,9 +3,9 @@
 const int ALIVE = 1;
 const int DEAD  = 0;
 
-int randNum(int max) {
-    return simRand() % max;
-}
+// int f(int max) {
+//     return simRand() % max;
+// }
 
 // Функция для рисования игрового поля
 void drawGrid(int grid[SIM_X_SIZE * SIM_Y_SIZE]) {
@@ -51,20 +51,16 @@ int countNeighbours(int grid[SIM_X_SIZE * SIM_Y_SIZE], int row, int col) {
 }
 
 void app() {
-    simRand(); // Инициализация генератора случайных чисел
+    //simRand(); // Инициализация генератора случайных чисел
 
     // Создание массива для хранения состояния клеток
-    int grid[SIM_X_SIZE * SIM_Y_SIZE];
-    for (int i = 0; i < SIM_X_SIZE; ++i) {
-        for (int j = 0; j < SIM_Y_SIZE; ++j) {
-            grid[i + SIM_X_SIZE*j] = DEAD;
-        }
-    }
+    int grid[SIM_X_SIZE * SIM_Y_SIZE] = {DEAD};
+  
 
     // Инициализация начальной конфигурации клеток
-    int numLivingCells = randNum(10000);
+    int numLivingCells = (simRand() % 10000);
     for (int k = 0; k < numLivingCells; ++k) {
-        int r = randNum(SIM_X_SIZE * SIM_Y_SIZE);
+        int r = (simRand() % (SIM_X_SIZE * SIM_Y_SIZE));
         int row = r / (SIM_X_SIZE /  2);
         int col = r % SIM_Y_SIZE;
         grid[row + SIM_X_SIZE * col] = ALIVE;
